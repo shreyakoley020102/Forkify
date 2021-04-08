@@ -39,8 +39,10 @@ const showRecipe = async function () {
 
     if (!id) return;
 
-    // 1)Loading recipes
     renderSpinner(recipeContainer);
+
+    // 1)Loading recipes
+    await model.loadRecipe(id);
 
     // 2) Rendering recipes
     const markup = `
