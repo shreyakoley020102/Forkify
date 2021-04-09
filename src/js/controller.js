@@ -2,8 +2,7 @@ import * as model from './model.js';
 import recipeView from './views/recipeView.js';
 
 //import icons from '../img/icons.svg'; //Parcel 1
-
-import icons from 'url:../img/icons.svg'; //Parcel 2
+//import icons from 'url:../img/icons.svg'; //Parcel 2
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import recipeView from './views/recipeView.js';
