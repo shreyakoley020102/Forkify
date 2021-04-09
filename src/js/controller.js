@@ -43,6 +43,7 @@ const showRecipe = async function () {
 
     // 1)Loading recipes
     await model.loadRecipe(id);
+    const { recipe } = model.state;
 
     // 2) Rendering recipes
     const markup = `
