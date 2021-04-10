@@ -1,4 +1,4 @@
-import icons from 'url:../img/icons.svg';
+import icons from 'url:../../img/icons.svg';
 
 class RecipeView {
   #parentElement = document.querySelector('.recipe');
@@ -6,8 +6,8 @@ class RecipeView {
 
   render(data) {
     this.#data = data;
-    const markup = this.#generateMarkup;
-    this.#clear;
+    const markup = this.#generateMarkup();
+    this.#clear();
     this.#parentElement.insertAdjacentHTML('afterbegin', markup);
   }
 

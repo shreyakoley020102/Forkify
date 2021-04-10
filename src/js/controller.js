@@ -5,7 +5,6 @@ import recipeView from './views/recipeView.js';
 //import icons from 'url:../img/icons.svg'; //Parcel 2
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
-import recipeView from './views/recipeView.js';
 
 const recipeContainer = document.querySelector('.recipe');
 
@@ -27,7 +26,6 @@ const controlRecipes = async function () {
     console.log(id);
 
     if (!id) return;
-
     recipeView.renderSpinner();
 
     // 1)Loading recipes
@@ -39,8 +37,6 @@ const controlRecipes = async function () {
     alert(err);
   }
 };
-
-controlRecipes();
 
 ['hashchange', 'load'].forEach(ev =>
   window.addEventListener(ev, controlRecipes)
